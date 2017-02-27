@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no"
+ 		var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+ 		if (iOS) { viewport += ", shrink-to-fit=no" }
+ 		document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+		})()
+		</script>
+
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
+
+		<link rel="stylesheet" type="text/css" href="framer/style.css?nocache=6d40bc53861208d298f85019e08849ff">
+
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js?nocache=164ba5055a316aa274c421b015392765"></script>
+		<script src="framer/framer.generated.js?nocache=831409fdce1e221f2799cb2f310b209f"></script>
+		<script src="framer/framer.modules.js?nocache=35dafeae9377b41016967f99f227cf4c"></script>
+		<script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 2;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};(function() {
+  var bg, i, j, k, l, len, naverGreen, normalColor, numberOfsubject, openedPageOn, page, pageComp, pages, ref, scrollComp, searchOff, searchOn, sketch, subjects, tap, taps, windows;
+
+  sketch = Framer.Importer.load("imported/flexable_import@2x");
+
+  Utils.globalLayers(sketch);
+
+  Framer.Defaults.Animation = {
+    curve: "spring(160, 20, 10)"
+  };
+
+  numberOfsubject = 5;
+
+  subjects = ["News", "Enter", "Sports", "Econo", "Health"];
+
+  windows = [window1, window2, window3, window4];
+
+  pages = [];
+
+  taps = [];
+
+  naverGreen = "#00c73c";
+
+  normalColor = "#1e1e1e";
+
+  bg = window.__framerNew("bg", "15:9-20:9", "#8f72db71",new BackgroundLayer({
+    backgroundColor: "#212121",
+    html: "열려 있는 페이지",
+    style: {
+      "font-size": "36px",
+      "font-weight": "300",
+      "text-align": "center",
+      "lineHeight": "196px"
+    }
+  }));
+
+  pageComp = window.__framerNew("pageComp", "21:15-25:19", "#13b3e6423",new PageComponent({
+    width: Screen.width,
+    height: Screen.height,
+    parent: window1,
+    directionLock: true
+  }));
+
+  pageComp.placeBefore(articleBg);
+
+  pageComp.content.draggable.overdrag = false;
+
+  for (i = j = 0, ref = numberOfsubject; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+    scrollComp = window.__framerNew("scrollComp", "32:18-40:0", "#f204ebf7",new ScrollComponent({
+      x: i * Screen.width,
+      width: Screen.width,
+      height: Screen.height,
+      backgroundColor: "transparent",
+      parent: pageComp.content,
+      directionLock: true,
+      scrollHorizontal: false
+    }));
+    pages.push(scrollComp);
+    page = window.__framerNew("page", "42:12-48:0", "#10602d9a1",new Layer({
+      width: Screen.width,
+      height: 2000,
+      parent: scrollComp.content,
+      image: "images/" + subjects[i] + ".png"
+    }));
+    tap = window.__framerNew("tap", "48:11-56:0", "#1753bcf5a",new Layer({
+      x: (Screen.width / numberOfsubject) * i,
+      width: Screen.width / numberOfsubject,
+      height: 84,
+      backgroundColor: "transparent",
+      parent: navigation,
+      html: subjects[i],
+      style: {
+        "font-family": "NanumSquareOTFB , sans-serif",
+        "font-size": "34px",
+        "font-weight": "500",
+        "color": normalColor,
+        "text-align": "center",
+        "lineHeight": "84px"
+      }
+    }));
+    taps.push(tap);
+  }
+
+  pageComp.on("change:currentPage", function() {
+    var k, ref1;
+    for (i = k = 0, ref1 = numberOfsubject; 0 <= ref1 ? k < ref1 : k > ref1; i = 0 <= ref1 ? ++k : --k) {
+      taps[i].style = {
+        "color": normalColor
+      };
+    }
+    i = pageComp.horizontalPageIndex(pageComp.currentPage);
+    indicator.animate({
+      properties: {
+        x: 20 + i * Screen.width / numberOfsubject
+      },
+      time: 0.2
+    });
+    return taps[i].style = {
+      "color": naverGreen
+    };
+  });
+
+  taps[0].style = {
+    "color": naverGreen
+  };
+
+  windowIcon.parent = null;
+
+  tapIcon.parent = null;
+
+  tapIcon.placeBehind(window1);
+
+  statusBar.parent = null;
+
+  searchIcon.opacity = 0;
+
+  windowIcon.opacity = 0;
+
+  searchIcon.scale = 0;
+
+  windowIcon.scale = 0;
+
+  menu2.opacity = .6;
+
+  menu3.opacity = .6;
+
+  title1.visible = false;
+
+  searchInput.clip = true;
+
+  window1.clip = true;
+
+  searchmode.x = 0;
+
+  searchmode.visible = false;
+
+  searchmode.backgroundColor = null;
+
+  searchmode.placeBehind(statusBar);
+
+  keyboard.y = Screen.height;
+
+  for (i = k = 0; k <= 3; i = ++k) {
+    windows[i].x = 0;
+    windows[i].shadowColor = "rgba(0,0,0,0.2)";
+    windows[i].shadowY = -20;
+    windows[i].shadowBlur = 20;
+  }
+
+  window1.states.window = {
+    scale: .92,
+    y: Screen.height * 4 / 8,
+    opacity: 1
+  };
+
+  window2.states.window = {
+    scale: .88,
+    y: Screen.height * 3 / 8,
+    opacity: 1
+  };
+
+  window3.states.window = {
+    scale: .84,
+    y: Screen.height * 2 / 8,
+    opacity: 1
+  };
+
+  window4.states.window = {
+    scale: .80,
+    y: Screen.height * 1 / 8,
+    opacity: 1
+  };
+
+  openedPageOn = function() {
+    var l, len, len1, m, results, results1;
+    if (window1.states.current.name !== "window") {
+      window1.animate("window");
+      window2.animate("window");
+      window3.animate("window");
+      window4.animate("window");
+      title1.visible = true;
+      results = [];
+      for (l = 0, len = pages.length; l < len; l++) {
+        page = pages[l];
+        results.push(page.content.draggable = false);
+      }
+      return results;
+    } else {
+      window1.animate("default", {
+        curve: "ease-in-out",
+        time: .2
+      });
+      window2.animate("default", {
+        curve: "ease-in-out",
+        time: .2
+      });
+      window3.animate("default", {
+        curve: "ease-in-out",
+        time: .2
+      });
+      window4.animate("default", {
+        curve: "ease-in-out",
+        time: .2
+      });
+      title1.visible = false;
+      results1 = [];
+      for (m = 0, len1 = pages.length; m < len1; m++) {
+        page = pages[m];
+        results1.push(page.content.draggable = true);
+      }
+      return results1;
+    }
+  };
+
+  windowIcon.onClick(function() {
+    return openedPageOn();
+  });
+
+  for (l = 0, len = pages.length; l < len; l++) {
+    page = pages[l];
+    page.onMove(function() {
+      header.y = Utils.modulate(this.y, [0, -88], [0, -88], true);
+      menu1.x = Utils.modulate(this.y, [0, -88], [0, 194], true);
+      menu2.x = Utils.modulate(this.y, [0, -88], [246, 294], true);
+      menu3.x = Utils.modulate(this.y, [0, -88], [492, 394], true);
+      menu1Txt.opacity = Utils.modulate(this.y, [0, -88], [1, 0], true);
+      menu2Txt.opacity = Utils.modulate(this.y, [0, -88], [1, 0], true);
+      menu3Txt.opacity = Utils.modulate(this.y, [0, -88], [1, 0], true);
+      searchInput.y = Utils.modulate(this.y, [0, -88], [54, -34], true);
+      searchInput.opacity = Utils.modulate(this.y, [0, -88], [1, 0], true);
+      searchIcon.opacity = Utils.modulate(this.y, [0, -88], [0, 1], true);
+      windowIcon.opacity = Utils.modulate(this.y, [0, -88], [0, 1], true);
+      searchIcon.scale = Utils.modulate(this.y, [0, -88], [0, 1], true);
+      return windowIcon.scale = Utils.modulate(this.y, [0, -88], [0, 1], true);
+    });
+  }
+
+  searchOn = function() {
+    searchmode.visible = true;
+    weather.visible = false;
+    window1.animate({
+      blur: 20
+    });
+    return keyboard.animate({
+      maxY: Screen.height
+    });
+  };
+
+  searchOff = function() {
+    searchmode.visible = false;
+    weather.visible = true;
+    window1.animate({
+      blur: 0
+    });
+    return keyboard.animate({
+      y: Screen.height
+    });
+  };
+
+  searchInput.onClick(function() {
+    return searchOn();
+  });
+
+  searchIcon.onClick(function() {
+    return searchOn();
+  });
+
+  dimmed.onClick(function() {
+    return searchOff();
+  });
+
+}).call(this);
+})</script>
+
+	</head>
+	<body>
+	</body>
+</html>

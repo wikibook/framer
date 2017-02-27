@@ -1,0 +1,1228 @@
+[
+	{
+		"id": 16076,
+		"name": "deviceFrame",
+		"layerFrame": {
+			"x": 0,
+			"y": 0,
+			"width": 720,
+			"height": 1280
+		},
+		"maskFrame": null,
+		"image": null,
+		"imageType": null,
+		"children": [
+			{
+				"id": 15801,
+				"name": "pageindicator",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/pageindicator.png",
+					"frame": {
+						"x": 314,
+						"y": 80,
+						"width": 92,
+						"height": 11
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "411047236"
+			},
+			{
+				"id": 16054,
+				"name": "phoneScreen",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/phoneScreen.png",
+					"frame": {
+						"x": 132,
+						"y": 514,
+						"width": 454,
+						"height": 766
+					}
+				},
+				"imageType": "png",
+				"children": [
+					{
+						"id": 15541,
+						"name": "zoom",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/zoom.png",
+							"frame": {
+								"x": 74,
+								"y": 582,
+								"width": 164,
+								"height": 165
+							}
+						},
+						"imageType": "png",
+						"children": [
+							{
+								"id": 16067,
+								"name": "zoomLayer",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/zoomLayer.png",
+									"frame": {
+										"x": 51,
+										"y": 533,
+										"width": 429,
+										"height": 216
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542665057"
+							},
+							{
+								"id": 16065,
+								"name": "zoomMask",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/zoomMask.png",
+									"frame": {
+										"x": 77,
+										"y": 585,
+										"width": 158,
+										"height": 158
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542665059"
+							}
+						],
+						"modification": "918868758"
+					},
+					{
+						"id": 15231,
+						"name": "dragLayer",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/dragLayer.png",
+							"frame": {
+								"x": 85,
+								"y": 601,
+								"width": 550,
+								"height": 119
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "950615101"
+					},
+					{
+						"id": 16024,
+						"name": "screen01",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/screen01.png",
+							"frame": {
+								"x": 134,
+								"y": 516,
+								"width": 450,
+								"height": 764
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1408119557"
+					},
+					{
+						"id": 16022,
+						"name": "screen02",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/screen02.png",
+							"frame": {
+								"x": 134,
+								"y": 516,
+								"width": 450,
+								"height": 764
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1643157760"
+					},
+					{
+						"id": 16017,
+						"name": "screen03",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/screen03.png",
+							"frame": {
+								"x": 134,
+								"y": 516,
+								"width": 450,
+								"height": 764
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1063461636"
+					},
+					{
+						"id": 16015,
+						"name": "screen04",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/screen04.png",
+							"frame": {
+								"x": 134,
+								"y": 516,
+								"width": 450,
+								"height": 764
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "152949120"
+					},
+					{
+						"id": 15542,
+						"name": "phone",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/phone.png",
+							"frame": {
+								"x": 102,
+								"y": 421,
+								"width": 516,
+								"height": 859
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "772172816"
+					}
+				],
+				"modification": "1603763359"
+			},
+			{
+				"id": 16031,
+				"name": "slideBg",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/slideBg.png",
+					"frame": {
+						"x": 0,
+						"y": 619,
+						"width": 720,
+						"height": 661
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1542665120"
+			},
+			{
+				"id": 15985,
+				"name": "selectCard",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": null,
+				"imageType": null,
+				"children": [
+					{
+						"id": 16075,
+						"name": "checkBtn_on",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/checkBtn_on.png",
+							"frame": {
+								"x": 90,
+								"y": 1100,
+								"width": 540,
+								"height": 100
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1546240935"
+					},
+					{
+						"id": 16036,
+						"name": "checkBtn_nor",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/checkBtn_nor.png",
+							"frame": {
+								"x": 90,
+								"y": 1100,
+								"width": 540,
+								"height": 100
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "659561465"
+					},
+					{
+						"id": 16176,
+						"name": "selected",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": null,
+						"imageType": null,
+						"children": [
+							{
+								"id": 16175,
+								"name": "selectedCard10",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard10.png",
+									"frame": {
+										"x": 208,
+										"y": 781,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "202308780"
+							},
+							{
+								"id": 16171,
+								"name": "selectedCard09",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard09.png",
+									"frame": {
+										"x": 52,
+										"y": 781,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1386039119"
+							},
+							{
+								"id": 16159,
+								"name": "selectedCard08",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard08.png",
+									"frame": {
+										"x": 520,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1621077322"
+							},
+							{
+								"id": 16155,
+								"name": "selectedCard07",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard07.png",
+									"frame": {
+										"x": 364,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "436778054"
+							},
+							{
+								"id": 16151,
+								"name": "selectedCard06",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard06.png",
+									"frame": {
+										"x": 208,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "2146894057"
+							},
+							{
+								"id": 16147,
+								"name": "selectedCard05",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard05.png",
+									"frame": {
+										"x": 52,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1911855854"
+							},
+							{
+								"id": 16143,
+								"name": "selectedCard04",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard04.png",
+									"frame": {
+										"x": 520,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "323507955"
+							},
+							{
+								"id": 16139,
+								"name": "selectedCard03",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard03.png",
+									"frame": {
+										"x": 364,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1524063109"
+							},
+							{
+								"id": 16135,
+								"name": "selectedCard02",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard02.png",
+									"frame": {
+										"x": 208,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "2121815928"
+							},
+							{
+								"id": 16048,
+								"name": "selectedCard01",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/selectedCard01.png",
+									"frame": {
+										"x": 52,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "533468029"
+							}
+						],
+						"modification": "198875316"
+					},
+					{
+						"id": 15982,
+						"name": "cards",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": null,
+						"imageType": null,
+						"children": [
+							{
+								"id": 15981,
+								"name": "card10",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card10.png",
+									"frame": {
+										"x": 208,
+										"y": 780,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694850"
+							},
+							{
+								"id": 15978,
+								"name": "card9",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card9.png",
+									"frame": {
+										"x": 52,
+										"y": 780,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694851"
+							},
+							{
+								"id": 15975,
+								"name": "card8",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card8.png",
+									"frame": {
+										"x": 520,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694874"
+							},
+							{
+								"id": 15972,
+								"name": "card7",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card7.png",
+									"frame": {
+										"x": 364,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694875"
+							},
+							{
+								"id": 15969,
+								"name": "card6",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card6.png",
+									"frame": {
+										"x": 208,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694877"
+							},
+							{
+								"id": 15966,
+								"name": "card5",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card5.png",
+									"frame": {
+										"x": 52,
+										"y": 550,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694878"
+							},
+							{
+								"id": 15963,
+								"name": "card4",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card4.png",
+									"frame": {
+										"x": 520,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694880"
+							},
+							{
+								"id": 15960,
+								"name": "card3",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card3.png",
+									"frame": {
+										"x": 364,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694882"
+							},
+							{
+								"id": 15957,
+								"name": "card2",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card2.png",
+									"frame": {
+										"x": 208,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "465406349"
+							},
+							{
+								"id": 15954,
+								"name": "card1",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/card1.png",
+									"frame": {
+										"x": 52,
+										"y": 320,
+										"width": 148,
+										"height": 206
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "1542694906"
+							}
+						],
+						"modification": "1958020419"
+					}
+				],
+				"modification": "13632791"
+			},
+			{
+				"id": 16078,
+				"name": "pages",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/pages.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 720,
+						"height": 1280
+					}
+				},
+				"imageType": "png",
+				"children": [
+					{
+						"id": 15491,
+						"name": "txt01",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/txt01.png",
+							"frame": {
+								"x": 0,
+								"y": 0,
+								"width": 720,
+								"height": 1280
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542694909"
+					},
+					{
+						"id": 15113,
+						"name": "txt02",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/txt02.png",
+							"frame": {
+								"x": 0,
+								"y": 0,
+								"width": 720,
+								"height": 1280
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542694911"
+					},
+					{
+						"id": 15558,
+						"name": "txt03",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/txt03.png",
+							"frame": {
+								"x": 0,
+								"y": 0,
+								"width": 720,
+								"height": 1280
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542694912"
+					},
+					{
+						"id": 15802,
+						"name": "txt04",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/txt04.png",
+							"frame": {
+								"x": 0,
+								"y": 0,
+								"width": 720,
+								"height": 1280
+							}
+						},
+						"imageType": "png",
+						"children": [
+							{
+								"id": 15095,
+								"name": "setBtn",
+								"layerFrame": {
+									"x": 0,
+									"y": 0,
+									"width": 720,
+									"height": 1280
+								},
+								"maskFrame": null,
+								"image": {
+									"path": "images/setBtn.png",
+									"frame": {
+										"x": 169,
+										"y": 270,
+										"width": 383,
+										"height": 76
+									}
+								},
+								"imageType": "png",
+								"children": [
+									
+								],
+								"modification": "869222195"
+							}
+						],
+						"modification": "1489447152"
+					},
+					{
+						"id": 15989,
+						"name": "txt05",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/txt05.png",
+							"frame": {
+								"x": 84,
+								"y": 138,
+								"width": 553,
+								"height": 44
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542873783"
+					}
+				],
+				"modification": "2042154098"
+			},
+			{
+				"id": 16130,
+				"name": "bgIcons",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": null,
+				"imageType": null,
+				"children": [
+					{
+						"id": 16112,
+						"name": "icons03",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/icons03.png",
+							"frame": {
+								"x": 0,
+								"y": 674,
+								"width": 720,
+								"height": 578
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542873808"
+					},
+					{
+						"id": 16102,
+						"name": "icons02",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/icons02.png",
+							"frame": {
+								"x": 0,
+								"y": 572,
+								"width": 720,
+								"height": 708
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542873810"
+					},
+					{
+						"id": 16098,
+						"name": "icons01",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 720,
+							"height": 1280
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/icons01.png",
+							"frame": {
+								"x": 0,
+								"y": 595,
+								"width": 720,
+								"height": 685
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "1542873812"
+					}
+				],
+				"modification": "545867497"
+			},
+			{
+				"id": 16269,
+				"name": "naver",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/naver.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 720,
+						"height": 1280
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1542873814"
+			},
+			{
+				"id": 16052,
+				"name": "bg",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 720,
+					"height": 1280
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/bg.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 720,
+						"height": 1280
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "1542873837"
+			}
+		],
+		"modification": "2101098896"
+	}
+]
