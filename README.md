@@ -22,8 +22,8 @@
 | 07 네이버 메인 페이지 인터랙션 | https://wikibook.github.io/framer/chap_07/examples/pageNavigation.framer/ |
 | 07 워크 스루 만들기 | https://wikibook.github.io/framer/chap_07/examples/walkthroughs.framer/ |
 | 08 네이버 메인 헤더 인터랙션 | https://wikibook.github.io/framer/chap_08/examples/modulateHeader.framer/ |
-| 09 스티키 헤더 인터랙션(랜덤높이) | https://wikibook.github.io/framer/chap_09/examples/stickyheader2.framer/ |
 | 09 스티키 헤더 인터랙션(고정높이) | https://wikibook.github.io/framer/chap_09/examples/stickyheader1.framer/ |
+| 09 스티키 헤더 인터랙션(랜덤높이) | https://wikibook.github.io/framer/chap_09/examples/stickyheader2.framer/ |
 | 10 포토 에디터 만들기 | https://wikibook.github.io/framer/chap_10/examples/photoEditor.framer/ |
 | 10 미디어 플레이어 만들기 | https://wikibook.github.io/framer/chap_10/examples/mediaPlayer.framer/ |
 | 11 네이버앱 콘셉트 디자인(영문) | https://wikibook.github.io/framer/chap_11/examples/flexableSearchBar_En.framer/ |
