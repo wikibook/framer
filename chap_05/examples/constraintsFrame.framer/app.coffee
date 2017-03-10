@@ -33,6 +33,9 @@ layerA = new Layer
 # draggable.enable
 layerA.draggable.enabled = true
 
+# overdrag = false
+layerA.draggable.overdrag = false
+
 # draggable.constraints
 layerA.draggable.constraints = {
 	x: 100
