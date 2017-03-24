@@ -6,18 +6,20 @@ Utils.globalLayers(psd)
 device.originX = 0
 device.originY = 0
 device.scale = Screen.width / 640
+adjustedWidth = Screen.width / device.scale
+adjustedHeight = Screen.height / device.scale
 
 # 주제판 메뉴 정보를 만든다.
-menu = ["news", "entertain", "sports","webtoon","movie", "shopping"]
+menu = ["news", "entertain", "sports", "webtoon", "movie", "shopping"]
 content.visible = false
 
 # 페이지 컴포넌트를 생성한다.
 pageContent = new PageComponent
-	width: Screen.width
-	height: Screen.height
+	width: adjustedWidth
+	height: adjustedHeight
 	parent: device
 	scrollVertical: false
-	
+
 # 페이지 컴포넌트의 y좌표를 디자인 시안과 동일하게 맞춘다.
 pageContent.y = statusBar.height + header.height
 
@@ -25,8 +27,8 @@ pageContent.y = statusBar.height + header.height
 for i in [0...menu.length]
 	menuCode = menu[i]
 	page = new Layer
-		width: Screen.width
-		height: Screen.height - statusBar.height - header.height
+		width: adjustedWidth
+		height: adjustedHeight - statusBar.height - header.height
 		image: psd[menuCode].image
 	page.idx = i
 	pageContent.addPage(page)
@@ -37,5 +39,5 @@ pageContent.on "change:currentPage", ->
 	i = current.idx
 	indicator.animate
 		properties:
-			x: i * Screen.width / menu.length
+			x: i * adjustedWidth / menu.length
 		time: 0.2
