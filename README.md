@@ -28,3 +28,16 @@
 | 10 미디어 플레이어 만들기 | https://wikibook.github.io/framer/chap_10/examples/mediaPlayer.framer/ |
 | 11 네이버앱 콘셉트 디자인(영문) | https://wikibook.github.io/framer/chap_11/examples/flexableSearchBar_En.framer/ |
 | 11 네이버앱 콘셉트 디자인(한글) | https://wikibook.github.io/framer/chap_11/examples/flexableSearchBar_Kr.framer/ |
+
+
+
+# Update
+
+p108 : <머터리얼 디자인 인터랙션 만들기> 오탈자 수정
+
+  `x: square.x`
+  `y: square.y + 620`
+	
+  를 다음과 같이 수정
+  `x: dialog.x`
+  `y: dialog.y + 620`
