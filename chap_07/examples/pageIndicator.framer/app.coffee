@@ -25,7 +25,7 @@ pageScroller = new PageComponent
 indicators = []
 
 # 페이지 인디케이터를 담기 위한 부모 레이어 만들기
-indicotorParent = new Layer
+indicatorParent = new Layer
 	width: dotSize * pageCount * 2
 	height: dotSize
 	x: Align.center
@@ -49,7 +49,7 @@ for i in [0...pageCount]
 		x: dotSize * 2 * i + dotSize/2
 		opacity: .3
 		borderRadius: "50%"
-		parent: indicotorParent
+		parent: indicatorParent
 	
 	indicator.idx = i # !중요! 인디케이터들에 순서 속성 idx 추가하기
 	indicators.push(indicator) # 인디케이터를 배열에 담기
