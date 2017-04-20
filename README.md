@@ -32,20 +32,97 @@
 
 
 # Update
+—
+1. 108p : <머터리얼 디자인 인터랙션 만들기>
+- 변수명 `square`를 `dialog`로 정정
 
-1. p108 : <머터리얼 디자인 인터랙션 만들기> 오탈자 수정
-
-  `x: square.x`
-  `y: square.y + 620`
+```coffeescript
+ # before
+x: square.x
+y: square.y + 620
 	
-  를 다음과 같이 수정
-  `x: dialog.x`
-  `y: dialog.y + 620`
+ # after
+x: dialog.x
+y: dialog.y + 620
+```
 
-2. p111~112 <머터리얼 디자인 만들기> 오탈자 수정
+2. 111~112p <머터리얼 디자인 만들기>
+- 본문 및 코드에서 `,`(콤마)가 빠진 부분을 정정
+```coffeescript
+Utils.delay 0.5 -> # before
+Utils.delay 0.5, -> # after
+```
 
-본문 및 코드의 `Utils.delay 0.5 ->`를 `Utils.delay 0.5, ->`로 수정합니다. `,`가 빠져 있습니다.
+3. 91p ~ 93p <프로토타이핑 시작하기>
 
-3. p91 ~ p93 <프로토타이핑 시작하기> 오탈자 수정
+- ‘`layer.index`숫자가 작을 수록 레이어가 앞에 보인다’고 기입됨.
+- ‘`layer.index`숫자가 클 수록 레이어가 앞에 보인다’로 정정
 
-`layer.index`는 숫자가 클 수록 화면상에서 앞에 보입니다. 책에는 `index`숫자가 작을 수록 앞에 보이는 것으로 거꾸로 기입되어 있습니다.
+4. 178p <포커스와 페이지 순서>
+- 두 번째 페이지를 호출할 때 사용하는 변수명 `pageTwo`를 `layerB`로 정정
+```coffeescript
+ # before
+page.snapToPage(pageTwo)
+page.snapToPage(pageTwo, true, curve: “spring(200,25,0)”)
+	
+ # after
+page.snapToPage(layerB)
+page.snapToPage(layerB, true, curve: “spring(200,25,0)”)
+```
+
+5. 184p <페이지 인디케이터 추가하기>
+- 페이지 컴포넌트를 호출할 때 사용하는 변수명 `pageContent`를 `page`로 정정.
+```coffeescript	
+ # before
+pageContent.on “change:currentPage”, ->
+	current = pageContent.currentPage
+
+ # after
+page.on “change:currentPage”, ->
+	current = page.currentPage
+```
+
+6. 188p <페이지 컴포넌트 만들기>
+- 페이지 변경 시 실행할 함수 조건문에서 마지막 `else if`를 `else`로 정정.
+```coffeescript	
+ # 페이지 변경 시 실행할 이벤트(함수)를 설정한다.
+txtPages.on “change:currentPage”, ->
+	if txtPages.currentPage is txt01
+		…
+	else if txtPages.currentPage is txt02
+		…
+	else if txtPages.currentPage is txt03
+		…
+	else # after
+		page04()
+```
+
+
+7. 194p <페이지 컴포넌트 만들기>
+- 상태 애니메이션을 실행하기 위한 함수가 누락됨.
+```coffeescript	
+ # before
+ # 상태 애니메이션을 실행한다.
+	txtPages.visible = false
+	…
+
+ # after
+ # 상태 애니메이션을 실행한다.
+page05 ->
+	txtPages.visible = false
+	…
+```
+
+
+8. p200p <스크롤 위치에 따라 요소가 변하는 헤더 만들기>
+- 200p 스크롤 래핑시 불러올 레이어의 변수명을 `Layers`에서 `psd`로 정정.
+- 202p 동일한 오기 정정
+```coffeescript	
+ # before
+ # 스크롤 래핑
+scroll = scrollComponent.wrap(Layers.content)
+
+ # after
+ # 스크롤 래핑
+scroll = scrollComponent.wrap(psd.content)
+```
