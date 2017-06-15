@@ -37,6 +37,7 @@
 1. 108p : <머터리얼 디자인 인터랙션 만들기>
 - 변수명 `square`를 `dialog`로 정정
 
+
 ```coffeescript
  # before
 x: square.x
@@ -47,12 +48,14 @@ x: dialog.x
 y: dialog.y + 620
 ```
 
+
 2. 111~112p <머터리얼 디자인 만들기>
 - 본문 및 코드에서 `,`(콤마)가 빠진 부분을 정정
 ```coffeescript
 Utils.delay 0.5 -> # before
 Utils.delay 0.5, -> # after
 ```
+
 
 3. 91p ~ 93p <프로토타이핑 시작하기>
 
@@ -71,6 +74,8 @@ moremenuOn = ->
 moremenuOnOff = ->
 	moremenu.states.next()
 	...
+```
+
 
 5. 178p <포커스와 페이지 순서>
 - 두 번째 페이지를 호출할 때 사용하는 변수명 `pageTwo`를 `layerB`로 정정
@@ -84,6 +89,7 @@ page.snapToPage(layerB)
 page.snapToPage(layerB, true, curve: “spring(200,25,0)”)
 ```
 
+
 6. 184p <페이지 인디케이터 추가하기>
 - 페이지 컴포넌트를 호출할 때 사용하는 변수명 `pageContent`를 `page`로 정정.
 ```coffeescript	
@@ -95,6 +101,7 @@ pageContent.on “change:currentPage”, ->
 page.on “change:currentPage”, ->
 	current = page.currentPage
 ```
+
 
 7. 188p <페이지 컴포넌트 만들기>
 - 페이지 변경 시 실행할 함수 조건문에서 마지막 `else if`를 `else`로 정정.
