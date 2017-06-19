@@ -63,7 +63,27 @@ Utils.delay 0.5, -> # after
 - ‘`layer.index`숫자가 클 수록 레이어가 앞에 보인다’로 정정
 
 
-4. 169p <더보기 메뉴 인터랙션 구현하기>
+4. 151p <항목 순서와 위치를 조회하는 함수 만들기>
+- 함수 `layerAtIndex()`의 변수명 오기를 수정
+```coffeescript
+ # before
+# 해당하는 인덱스에 위치한 레이어를 조회한다.
+layerAtIndex = (index) ->
+	for list in allList
+		if list.listIndex is index
+			return list
+	...
+ # after
+# 해당하는 인덱스에 위치한 레이어를 조회한다.
+layerAtIndex = (index) ->
+	for list in allList
+		if list.idx is index
+			return list
+```
+
+
+
+5. 169p <더보기 메뉴 인터랙션 구현하기>
 - 마지막 예제 코드의 이벤트명 `moremenuOn`을 `moremenuOnOff`로 변경.
 ```coffeescript
  # before
@@ -77,7 +97,7 @@ moremenuOnOff = ->
 ```
 
 
-5. 178p <포커스와 페이지 순서>
+6. 178p <포커스와 페이지 순서>
 - 두 번째 페이지를 호출할 때 사용하는 변수명 `pageTwo`를 `layerB`로 정정
 ```coffeescript
  # before
@@ -90,7 +110,7 @@ page.snapToPage(layerB, true, curve: “spring(200,25,0)”)
 ```
 
 
-6. 184p <페이지 인디케이터 추가하기>
+7. 184p <페이지 인디케이터 추가하기>
 - 페이지 컴포넌트를 호출할 때 사용하는 변수명 `pageContent`를 `page`로 정정.
 ```coffeescript	
  # before
@@ -103,7 +123,7 @@ page.on “change:currentPage”, ->
 ```
 
 
-7. 188p <페이지 컴포넌트 만들기>
+8. 188p <페이지 컴포넌트 만들기>
 - 페이지 변경 시 실행할 함수 조건문에서 마지막 `else if`를 `else`로 정정.
 ```coffeescript	
  # 페이지 변경 시 실행할 이벤트(함수)를 설정한다.
@@ -119,7 +139,7 @@ txtPages.on “change:currentPage”, ->
 ```
 
 
-8. 194p <페이지 컴포넌트 만들기>
+9. 194p <페이지 컴포넌트 만들기>
 - 상태 애니메이션을 실행하기 위한 함수가 누락됨.
 ```coffeescript	
  # before
@@ -135,7 +155,7 @@ page05 ->
 ```
 
 
-9. p200p <스크롤 위치에 따라 요소가 변하는 헤더 만들기>
+10. p200p <스크롤 위치에 따라 요소가 변하는 헤더 만들기>
 - 200p 스크롤 래핑시 불러올 레이어의 변수명을 `Layers`에서 `psd`로 정정.
 - 202p 동일한 오기 정정
 ```coffeescript	
