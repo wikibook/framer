@@ -138,8 +138,25 @@ txtPages.on “change:currentPage”, ->
 		page04()
 ```
 
+9. 191p <페이지별 상태 설정하기>
+- 확대경 모양 레이어를 마스크 레이어로 만들 때 레이어 `zoomLayer`의 변수명이 `maskImg`로 잘못 표기됨.
+```coffeescript	
+ # before
+ # 마스크 레이어를 만든다
+ maskLayer = new Layer
+ 	...
+ maskImg.parent = maskLayer
+	…
 
-9. 194p <페이지 컴포넌트 만들기>
+ # after
+ # 마스크 레이어를 만든다
+ maskLayer = new Layer
+ 	...
+ zoomLayer.parent = maskLayer
+	…
+```
+
+10. 194p <페이지 컴포넌트 만들기>
 - 상태 애니메이션을 실행하기 위한 함수가 누락됨.
 ```coffeescript	
  # before
@@ -155,7 +172,7 @@ page05 ->
 ```
 
 
-10. p200p <스크롤 위치에 따라 요소가 변하는 헤더 만들기>
+11. p200p <스크롤 위치에 따라 요소가 변하는 헤더 만들기>
 - 200p 스크롤 래핑시 불러올 레이어의 변수명을 `Layers`에서 `psd`로 정정.
 - 202p 동일한 오기 정정
 ```coffeescript	
