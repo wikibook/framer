@@ -37,7 +37,6 @@
 1. 108p : <머터리얼 디자인 인터랙션 만들기>
 - 변수명 `square`를 `dialog`로 정정
 
-
 ```coffeescript
  # before
 x: square.x
@@ -46,6 +45,24 @@ y: square.y + 620
  # after
 x: dialog.x
 y: dialog.y + 620
+```
+
+- `clip:true`속성은 자식 레이어 `circle`이 아닌 부모레이어 `dialog`에 적용해야 함.
+108p ~ 109p 코드 수정
+```coffeescript
+# 대화상자 레이어
+dialog = new Layer
+	width : 400, height: 600
+	backgroundColor: "#FFF"
+	y: 300
+	clip: true
+dialog.center
+```
+```coffeescript
+# 클릭 애니메이션 레이어
+circle = new Layer
+	...
+	clip: true # 코드 제거(dialog 코드에 적용)
 ```
 
 
