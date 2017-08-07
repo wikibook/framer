@@ -128,13 +128,21 @@ page.snapToPage(layerB, true, curve: “spring(200,25,0)”)
 
 
 7. 184p <페이지 인디케이터 추가하기>
-- 페이지 컴포넌트를 호출할 때 사용하는 변수명 `pageContent`를 `page`로 정정.
+- 페이지 컴포넌트를 호출할 때 사용하는 변수명 `page`를 `layer`로, `pageContent`를 `page`로 정정.
 ```coffeescript	
  # before
+for i in [0...menu.length]
+	...
+	page.idx = i
+
 pageContent.on “change:currentPage”, ->
 	current = pageContent.currentPage
 
  # after
+ for i in [0...menu.length]
+	...
+	layer.idx = i
+
 page.on “change:currentPage”, ->
 	current = page.currentPage
 ```
